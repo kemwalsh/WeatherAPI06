@@ -9,6 +9,19 @@ window.addEventListener("DOMContentLoaded", function () {
     displayHistory(history_data);
 });
 
+var history_data = JSON.parse(localStorage.getItem("history")) || [];
+searchBtn.addEventListener("click", function () {
+    fetchCurrentData(city.value, apiKey);
+    if (city.value) {
+    if (!history_data.includes(city.value)) {
+        history_data.push(city.value);
+        localStorage.setItem("history", JSON.stringify(history_data));
+        displayHistory(history_data);
+        }
+    city.value = "";
+    }
+});
+
 // FETCH CURRENT WEATHER DATA
 var weatherData =
     JSON.parse(localStorage.getItem("weather_data")) ||
