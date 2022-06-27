@@ -105,7 +105,18 @@ function displayFutureForecast(forecasts) {
                 <p id="future-weather-wind">${forecast.uvi}</p>
             </div>
             </div>`;
-  });
-  displayItem = displayForecast.join("");
-  forecastContainer.innerHTML = displayItem;
+    });
+    displayItem = displayForecast.join("");
+    forecastContainer.innerHTML = displayItem;
+}
+
+// SEARCH HISTORY
+const historyContainer = document.querySelector(".search-history-data");
+
+function displayHistory(history) {
+    let displayHistory = history.map(function (data) {
+    return ` <p class="history-data">${data}</p>`;
+    });
+    displayItem = displayHistory.join("");
+    historyContainer.innerHTML = displayItem;
 }
