@@ -1,14 +1,38 @@
-# 06 Server-Side APIs: Weather Dashboard
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
+[![Stargazers][stars-shield]][stars-url]
+[![GitHub Watchers][github-watchers]][github-watchers-url]
 
-## Your Task
+<div align="center">
+# Weather API </div>
 
-Third-party APIs allow developers to access their data and functionality by making requests with specific parameters to a URL. Developers are often tasked with retrieving data from another application's API and using it in the context of their own. Your challenge is to build a weather dashboard that will run in the browser and feature dynamically updated HTML and CSS.
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://kemwalsh.github.io/WeatherAPI06">
+  </a>
 
-Use the [OpenWeather One Call API](https://openweathermap.org/api/one-call-api) to retrieve weather data for cities. Read through the documentation for setup and usage instructions. You will use `localStorage` to store any persistent data. For more information on how to work with the OpenWeather API, refer to the [Full-Stack Blog on how to use API keys](https://coding-boot-camp.github.io/full-stack/apis/how-to-use-api-keys).
+<h3 align="center">Weather API</h3>
+
+  <p align="center">
+    <br />
+    <a href="https://github.com/kemwalsh/WeatherAPI06"><strong>Explore the Docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://kemwalsh.github.io/WeatherAPI06/">View Demo</a>
+    ·
+    <a href="https://github.com/kemwalsh/WeatherAPI06/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/kemwalsh/WeatherAPI06/issues">Request Feature</a>
+  </p>
+</div>
+
 
 ## User Story
 
-```
+```md
 AS A traveler
 I WANT to see the weather outlook for multiple cities
 SO THAT I can plan a trip accordingly
@@ -16,7 +40,7 @@ SO THAT I can plan a trip accordingly
 
 ## Acceptance Criteria
 
-```
+```md
 GIVEN a weather dashboard with form inputs
 WHEN I search for a city
 THEN I am presented with current and future conditions for that city and that city is added to the search history
@@ -30,61 +54,65 @@ WHEN I click on a city in the search history
 THEN I am again presented with current and future conditions for that city
 ```
 
-## Mock-Up
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-The following image shows the web application's appearance and functionality:
+## Application Features:
 
-![The weather app includes a search option, a list of cities, and a five-day forecast and current weather conditions for Atlanta.](./Assets/06-server-side-apis-homework-demo.png)
+- Allows user to view weather conditions for specific city and save previous searches
 
-## Grading Requirements
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-This homework is graded based on the following criteria: 
+## Application Appearance and Functionality:
 
-### Technical Acceptance Criteria: 40%
+Video link displaying functionality:
 
-* Satisfies all of the above acceptance criteria plus the following:
+<!-- (https://drive.google.com/file/d/1vMatzI_ANvlNF2MA9eaoKh-R1yOhb1k9/view) -->
 
-    * Uses the OpenWeather API to retrieve weather data.
 
-    * Uses `localStorage` to store persistent data.
+### Built With
 
-### Deployment: 32%
+<!-- - [Node.js](https://nodejs.org/en/) -->
 
-* Application deployed at live URL.
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-* Application loads with no errors.
+## Project Links
 
-* Application GitHub URL submitted.
+[Repository](https://github.com/kemwalsh/WeatherAPI06)
 
-* GitHub repository that contains application code.
+[Live Website](https://kemwalsh.github.io/WeatherAPI06/)
 
-### Application Quality: 15%
+## Credits
 
-* Application user experience is intuitive and easy to navigate.
+List of Contributors:
 
-* Application user interface style is clean and polished.
+1. Kelly Walsh
 
-* Application resembles the mock-up functionality provided in the homework instructions.
+## Contact Info
 
-### Repository Quality: 13%
+Kelly Walsh - kellywalsh827@gmail.com
+<br>
+[![LinkedIn][linkedin-shield]][linkedin-url-kelly] [![GitHub][github-shield]][github-url-kelly] </br>
 
-* Repository has a unique name.
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-* Repository follows best practices for file structure and naming conventions.
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
+[contributors-shield]: https://img.shields.io/github/contributors/kemwalsh/WeatherAPI06.svg?style=for-the-badge
+[contributors-url]: https://github.com/kemwalsh/WeatherAPI06/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/kemwalsh/WeatherAPI06.svg?style=for-the-badge
+[forks-url]: https://github.com/kemwalsh/WeatherAPI06/network/members
+[stars-shield]: https://img.shields.io/github/stars/kemwalsh/WeatherAPI06?style=social
+[stars-url]: https://github.com/kemwalsh/WeatherAPI06/stargazers
+[issues-shield]: https://img.shields.io/github/issues/kemwalsh/WeatherAPI06.svg?style=for-the-badge
+[issues-url]: https://github.com/kemwalsh/WeatherAPI06/issues
+[license-shield]: https://img.shields.io/github/license/kemwalsh/WeatherAPI06?style=for-the-badge
+[license-url]: https://github.com/kemwalsh/WeatherAPI06/blob/master/LICENSE
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url-kelly]: https://www.linkedin.com/in/kellywalsh001/
+[github-shield]: https://img.shields.io/badge/-Github-blueviolet.svg?style=for-the-badge&logo=Github&colorB=555
+[github-url-kelly]: https://github.com/kemwalsh
+[github-watchers]: https://img.shields.io/github/watchers/kemwalsh/WeatherAPI06?style=social
+[github-watchers-url]: https://github.com/kemwalsh/WeatherAPI06/watchers
 
-* Repository contains multiple descriptive commit messages.
-
-* Repository contains quality readme file with description, screenshot, and link to deployed application.
-
-## Review
-
-You are required to submit BOTH of the following for review:
-
-* The URL of the functional, deployed application.
-
-* The URL of the GitHub repository. Give the repository a unique name and include a readme describing the project.
-
-- - -
-© 2021 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
+# WeatherAPI06
