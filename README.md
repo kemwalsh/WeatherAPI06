@@ -64,14 +64,14 @@ THEN I am again presented with current and future conditions for that city
 
 ## Application Appearance and Functionality:
 
-Video link displaying functionality:
+Image displaying functionality:
 
-<!-- (https://drive.google.com/file/d/1vMatzI_ANvlNF2MA9eaoKh-R1yOhb1k9/view) -->
+![Appearance](assets/images/screenshot.png)
 
 
 ### Built With
 
-<!-- - [Node.js](https://nodejs.org/en/) -->
+- [OpenWeather API](https://openweathermap.org/api)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
