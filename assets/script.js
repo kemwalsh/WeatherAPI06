@@ -25,7 +25,7 @@ searchBtn.addEventListener("click", function () {
 // FETCH CURRENT WEATHER DATA
 var weatherData =
     JSON.parse(localStorage.getItem("weather_data")) ||
-    fetchCurrentData("Delhi", apiKey);
+    fetchCurrentData("Doha", apiKey);
 
 function fetchCurrentData(city, ApiKey) {
     fetch(
