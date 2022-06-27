@@ -43,3 +43,69 @@ function forecastingData(lat, lon) {
         localStorage.setItem("forecasts", JSON.stringify(res));
     });
 }
+
+// DISPLAY WEATHER DATA
+const cityName = document.getElementById("present-weather-city");
+const presentDate = document.getElementById("present-weather-date");
+const Temp = document.getElementById("present-weather-temp");
+const Humidity = document.getElementById("present-weather-humidity");
+const Wind = document.getElementById("present-weather-wind");
+function setPresentWeatherData(data) {
+  cityName.innerHTML = data.name;
+  presentDate.innerHTML = moment().format("DD/MM/YYYY");
+  Temp.innerHTML = `${data.main.temp} C`;
+  Humidity.innerHTML = `${data.main.humidity}%`;
+  Wind.innerHTML = `${data.wind.speed} m/s`;
+}
+
+// DISPLAY WEATHER FORECASTING
+function displayFutureForecast(forecasts) {
+    let displayForecast = forecasts.map(function (forecast) {
+    var color = "white";
+    if (forecast.uvi >= 0 && forecast.uvi <= 2) {
+        color = "green";
+        }
+    if (forecast.uvi > 2 && forecast.uvi <= 5) {
+        color = "yellow";
+        }
+    if (forecast.uvi > 5 && forecast.uvi <= 7) {
+        color = "orange";
+        }
+    if (forecast.uvi > 7 && forecast.uvi <= 10) {
+        color = "red";
+        }
+    if (forecast.uvi > 11) {
+        color = "violet";
+        }
+
+    return `<div class="future-weather-card">
+            <div style="text-align: center; background: #fff;" class="icon">
+            <img src="http://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png"alt="icon"/>
+            </div>
+            <div class="future-weather-data">
+                <p>Date</p>
+                <p id="future-weather-date">${moment(forecast.dt * 1000).format(
+                "DD/MM/YYYY"
+                )}</p>
+            </div>
+            <div class="future-weather-data">
+                <p>Temperature</p>
+                <p id="future-weather-temp">${forecast.temp.day} C</p>
+            </div>
+            <div class="future-weather-data">
+                <p>Humidity</p>
+                <p id="future-weather-humidity">${forecast.humidity}%</p>
+            </div>
+            <div class="future-weather-data">
+                <p>Wind Speed</p>
+                <p id="future-weather-wind">${forecast.wind_speed} m/s</p>
+            </div>
+            <div class="future-weather-data" style="background: ${color};">
+                <p>UV Index</p>
+                <p id="future-weather-wind">${forecast.uvi}</p>
+            </div>
+            </div>`;
+  });
+  displayItem = displayForecast.join("");
+  forecastContainer.innerHTML = displayItem;
+}
